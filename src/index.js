@@ -1,0 +1,1 @@
+export { SystemjsLoader as default } from './loader'
