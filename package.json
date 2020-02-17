@@ -1,0 +1,36 @@
+{
+  "name": "@pollon/system-js",
+  "version": "1.0.0",
+  "description": "SystemJS loader for a Pollon application",
+  "main": "dist/pollon-system-js.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pollon-js/system-js.git"
+  },
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "dev:build": "rollup -c ./build/index.js",
+    "prepublish": "npm run dev:build"
+  },
+  "keywords": [
+    "pollon",
+    "system-js",
+    "framework",
+    "plugin",
+    "frontend"
+  ],
+  "author": "Francesco Lasaracina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pollon-js/system-js/issues"
+  },
+  "homepage": "https://github.com/pollon-js/system-js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup": "^1.31.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.2.0"
+  }
+}
