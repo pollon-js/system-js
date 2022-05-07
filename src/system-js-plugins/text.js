@@ -28,7 +28,7 @@
     systemJSPrototype.instantiate = function (url, parent) {
         var that = this
         if (this.shouldFetch(url)) {
-            return this.fetch(url).then(function (res) {
+            return this.fetch(url,{}).then(function (res) {
                 if (!res.ok) {
                     throw Error(res.status + ' ' + res.statusText + ', loading ' + url + (parent ? ' from ' + parent : ''))
                 }
